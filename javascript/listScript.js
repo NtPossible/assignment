@@ -26,6 +26,7 @@ function addURLItem(colour) {
     let ul = document.getElementById("colour_list");
     let li = document.createElement("li");
     li.setAttribute('id', colour);
+    li.setAttribute('class', "list_style")
     li.onclick = function () {
         li.remove()
         coloursList.pop()

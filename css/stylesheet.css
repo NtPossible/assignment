@@ -67,3 +67,12 @@ body {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+.list_style {
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.list_style:hover {
+    opacity: 0.7;
+}
