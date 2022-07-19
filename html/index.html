@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script defer src="genreMenuScript.js"></script>
+    <title>WebApps Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="displayAllGenres()">
+<div class="outsideColumn">
+
+    <div class="header">
+        <h1>Genres & Games</h1>
+        <p>Find games from a certain genre</p>
+    </div>
+
+    <div class="mainColumn">
+
+        <ul class="navigationBar">
+
+            <li class="menu"><a class="active" href="index.html">Homepage</a></li>
+            <li class="menu dropdown">
+                <a href="javascript:void(0)" class="dropdownButton">Genres</a>
+                <div class="dropdownButton-content" id="dropDownID"></div>
+            </li>
+            <li class="menu"><a href="EditGenre.html">Edit Genre</a></li>
+            <li class="menu"><a href="EditGame.html">Edit Game</a></li>
+            <li class="menu"><a href="EditDeveloper.html">Edit Developer</a></li>
+            <li class="menu"><a href="EditPublisher.html">Edit Publisher</a></li>
+
+        </ul>
+
+        <div class="alignText">
+            <h2>Welcome</h2>
+            <p>On this website, you can look at game genres and view the games in that genre</p>
+            <p>In addition, you can add/remove genres, games, developers and publishers. Only games can be edited</p>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
