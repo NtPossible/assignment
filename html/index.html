@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-UK">
 <head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script defer src="genreMenuScript.js"></script>
-    <title>WebApps Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <script defer src="../javascript/listScript.js"></script>
+    <title>Colour List</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-<body onload="displayAllGenres()">
-<div class="outsideColumn">
+<body>
+<div class="outside_column">
 
     <div class="header">
-        <h1>Genres & Games</h1>
-        <p>Find games from a certain genre</p>
+        <h1>Dev Assignment</h1>
+        <p>Add colours to a list with URL tags</p>
     </div>
 
-    <div class="mainColumn">
+    <div class="main_column">
 
-        <ul class="navigationBar">
+        <ul id="colour_list"></ul>
 
-            <li class="menu"><a class="active" href="index.html">Homepage</a></li>
-            <li class="menu dropdown">
-                <a href="javascript:void(0)" class="dropdownButton">Genres</a>
-                <div class="dropdownButton-content" id="dropDownID"></div>
-            </li>
-            <li class="menu"><a href="EditGenre.html">Edit Genre</a></li>
-            <li class="menu"><a href="EditGame.html">Edit Game</a></li>
-            <li class="menu"><a href="EditDeveloper.html">Edit Developer</a></li>
-            <li class="menu"><a href="EditPublisher.html">Edit Publisher</a></li>
-
-        </ul>
-
-        <div class="alignText">
-            <h2>Welcome</h2>
-            <p>On this website, you can look at game genres and view the games in that genre</p>
-            <p>In addition, you can add/remove genres, games, developers and publishers. Only games can be edited</p>
-
+        <div class="align_text">
+            <label for="colour">Add a colour to the list:</label><br>
+            <input class="input" type="text" id="colour" required><br>
+            <button onclick="addItem()" class="button_submit">Submit</button>
         </div>
-
     </div>
 
 </div>
